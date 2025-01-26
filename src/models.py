@@ -29,7 +29,7 @@ class Favoritos (Base):
 class Planet (Base):
     __tablename__='planet'
     id=Column (Integer,primary_key=True)
-    Planet=Column(Integer,ForeignKey('planet.id'))
+    Planet=Column(Integer,primary_key=True)
     planet=relationship(Favoritos)
 
 
